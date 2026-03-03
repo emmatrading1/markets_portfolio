@@ -1,41 +1,51 @@
-Market Pulse – 2026-03-03
+# Market Pulse – 2026-03-03
 
-Driver
-Geopolitical energy supply shock triggering inflation repricing.
+## Driver
+Geopolitical energy supply risk triggering inflation repricing.
 
+---
 
-Transmission
+## Transmission
 
-Rates
-2Y +X bps → front-end repricing
-10Y +X bps → inflation premium rising
-USD
-DXY +0.X% → broad USD strength
+### Rates
+- US 2Y: +X bps → front-end repricing / tighter policy expectations  
+- US 10Y: +X bps → inflation premium rising  
 
-FX
-EURUSD ↓
-USDJPY ↑
-USDCNH ↑
+### USD
+- DXY: +0.X% → broad USD strength  
 
-Equities
-SPX flat
-VIX +XX% → protection demand rising
+### FX
+- EURUSD ↓ → USD outperforming EUR  
+- USDJPY ↑ → yield differential widening  
+- USDCNH ↑ → CNH weakness under global stress  
 
-Commodities
-Oil +8% → supply disruption
-Gold ↓ under USD strength
+### Equities
+- SPX: flat → no clear risk-on  
+- VIX: +XX% → protection demand rising  
 
+### Commodities
+- Oil: +8% → supply disruption pricing  
+- Gold: ↓ under USD strength  
 
-Article Insights (FT)
+---
 
-Energy Structure
-Merchant traders structurally benefit from volatility.
-Capital concentration may reinforce future price swings.
+## Article Insights (FT)
 
-Fed Liquidity Regime
-Resistance to aggressive QT.
-Balance sheet likely structurally larger than pre-crisis norms.
-Liquidity regime debate could influence rate volatility.
+### Energy Structure
+Merchant traders structurally benefit from volatility.  
+Capital concentration may reinforce future price swings.  
+Physical asset ownership increases market influence.
 
-Risk
-If oil remains elevated, inflation expectations may re-anchor higher while liquidity constraints limit aggressive tightening.
+### Fed Liquidity Regime
+Resistance to aggressive QT.  
+Balance sheet likely structurally larger than pre-crisis norms.  
+Liquidity regime debate may increase rate volatility.
+
+---
+
+## Risk
+
+If oil remains elevated:
+- Inflation expectations may re-anchor higher  
+- Front-end rates may continue repricing  
+- Liquidity constraints could limit aggressive tightening  
