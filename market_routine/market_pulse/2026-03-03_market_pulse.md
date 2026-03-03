@@ -1,51 +1,17 @@
-# Market Pulse – 2026-03-03
+# MP 2026-03-03
 
-## Driver
-Geopolitical energy supply risk triggering inflation repricing.
+Driver: Geopolitical energy supply risk → inflation repricing.
 
----
+Transmission:
+Rates: 2Y 3.551% (+7.4bps) | 10Y 4.094% (+5.8bps) → front-end repricing > long-end (inflation premium bid)
+USD: DXY 99.15 (+0.61%) → broad USD strength
+FX: EURUSD 1.1606 (-0.69%) | USDJPY 157.74 (+0.25%) | USDCNH 6.9139 (+0.18%)
+EQ: SPX +0.04% | VIX 25.19 (+17.5%) → protection demand elevated
+Commodities: Oil +7.76% | Gold -2.29% → oil shock, gold capped by USD strength
 
-## Transmission
+FT Notes:
+Energy: Large merchant traders consolidating → volatility structurally monetised.
+Fed: QT resistance; balance sheet structurally large → liquidity regime debate may lift rate vol.
 
-### Rates
-- US 2Y: +X bps → front-end repricing / tighter policy expectations  
-- US 10Y: +X bps → inflation premium rising  
-
-### USD
-- DXY: +0.X% → broad USD strength  
-
-### FX
-- EURUSD ↓ → USD outperforming EUR  
-- USDJPY ↑ → yield differential widening  
-- USDCNH ↑ → CNH weakness under global stress  
-
-### Equities
-- SPX: flat → no clear risk-on  
-- VIX: +XX% → protection demand rising  
-
-### Commodities
-- Oil: +8% → supply disruption pricing  
-- Gold: ↓ under USD strength  
-
----
-
-## Article Insights (FT)
-
-### Energy Structure
-Merchant traders structurally benefit from volatility.  
-Capital concentration may reinforce future price swings.  
-Physical asset ownership increases market influence.
-
-### Fed Liquidity Regime
-Resistance to aggressive QT.  
-Balance sheet likely structurally larger than pre-crisis norms.  
-Liquidity regime debate may increase rate volatility.
-
----
-
-## Risk
-
-If oil remains elevated:
-- Inflation expectations may re-anchor higher  
-- Front-end rates may continue repricing  
-- Liquidity constraints could limit aggressive tightening  
+Risk:
+If oil holds > current levels → inflation expectations re-anchor ↑ → front-end further repricing; policy constrained by liquidity fragility.
