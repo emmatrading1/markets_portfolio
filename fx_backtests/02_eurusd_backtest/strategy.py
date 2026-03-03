@@ -73,7 +73,8 @@ def run_strategy(df: pd.DataFrame) -> pd.DataFrame:
     )
 
     # Entries/exits
-    df["Position_Change"] = df["Signal"].diff()
+    df["Position_Change"] = df["Signal" \
+    ""].diff()
     entries = (df["Position_Change"] == 1).sum()
     exits = (df["Position_Change"] == -1).sum()
 
