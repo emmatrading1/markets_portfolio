@@ -1,168 +1,150 @@
-# Forward pricing — notes (Hull Ch.5)
+forward pricing — hull ch5 notes
 
-today focus: how forward prices are determined
+main idea:
+forward price is not a prediction of the future price.
+it is set by arbitrage.
 
-key idea: forward price is NOT a prediction of the future price.  
-it is determined by arbitrage.
+at initiation → forward value = 0
 
-when you enter a forward contract, its value = 0.
+why?
+because delivery price is chosen so that no arbitrage exists.
 
-why?  
-because the delivery price is set so that no arbitrage opportunity exists.
+if forward price was wrong you could construct a risk-free profit using spot + borrowing.
 
----
+example intuition:
 
-## basic forward pricing (no income asset)
+strategy 1
+buy asset today
+borrow money to finance it
 
-formula
+cost at maturity
+S0 * e^(rT)
 
-F0 = S0 * e^(rT)
+strategy 2
+enter forward contract
+pay F0 at maturity
 
-S0 = spot price today  
-r = risk-free rate  
-T = maturity
+→ must be same outcome
 
-intuition:
-
-two strategies must give the same result:
-
-strategy 1  
-buy asset today → finance it by borrowing
-
-cost at maturity = S0 * e^(rT)
-
-strategy 2  
-enter forward contract today → pay F0 at maturity
-
-no arbitrage → these must be equal
-
-therefore
+so
 
 F0 = S0 * e^(rT)
 
----
-
-## if forward price is wrong
-
-if forward price too high:
+if forward price too high
 
 F0 > S0 e^(rT)
 
 arbitrage:
 
 t0
-borrow S0  
-buy asset  
+borrow S0
+buy asset
 short forward
 
 tT
-deliver asset into forward  
-receive F0  
-repay loan S0 e^(rT)
+deliver asset
+receive F0
+repay loan
 
 profit = F0 − S0 e^(rT)
 
-risk-free.
-
 ---
 
-## assets with income (dividends)
+dividends
 
-formula
+formula becomes
 
 F0 = S0 e^((r − q)T)
 
 q = dividend yield
 
-intuition:
+intuition
 
-owning the stock today gives you dividends  
-forward buyer does NOT receive dividends
+holding stock → you receive dividends
+forward buyer → does NOT receive them
 
 so owning spot is more valuable
 
-→ forward price must be lower.
+→ forward price lower
 
-large dividends → forward price decreases.
+large dividends → forward cheaper vs spot
 
 ---
 
-## FX forwards
-
-formula
+FX forwards
 
 F0 = S0 e^((rd − rf)T)
 
-rd = domestic interest rate  
-rf = foreign interest rate
+rd = domestic rate
+rf = foreign rate
 
-intuition:
+logic:
 
-holding foreign currency earns the foreign interest rate.
+holding foreign currency earns foreign interest rate
 
-higher foreign rate → forward price lower.
-
----
-
-## cost of carry idea
-
-forward price = spot + cost of carrying the asset.
-
-carry includes:
-
-interest rate  
-storage costs  
-dividends  
-foreign interest rate (FX)
-
-examples:
-
-interest rate ↑ → forward price ↑
-
-dividends ↑ → forward price ↓
-
-storage cost ↑ → forward price ↑
+so if foreign rates high
+forward price lower.
 
 ---
 
-## important distinction
+cost of carry idea
+
+forward price basically
+
+spot + cost of holding asset
+
+carry includes
+
+interest rate
+storage costs
+dividends
+foreign interest rate
+
+effects
+
+rates ↑ → forward ↑
+
+dividends ↑ → forward ↓
+
+storage costs ↑ → forward ↑
+
+---
+
+important thing
 
 forward price ≠ expected future price
 
-expected future price  
-→ depends on market expectations
+forward price
+→ determined by arbitrage
 
-forward price  
-→ determined by arbitrage.
-
----
-
-## small example
-
-S0 = 2000  
-r = 4%  
-T = 1
-
-F0 = 2000 e^(0.04) ≈ 2081.62
-
-with dividend yield q = 1%
-
-F0 = 2000 e^(0.03) ≈ 2060.91
-
-dividends reduce forward price.
+expected future price
+→ determined by expectations / probabilities
 
 ---
 
-## interview questions to know
+quick example
 
-why is forward value zero at initiation?
+S0 = 2000
+r = 4%
 
-what determines the forward price?
+F0 ≈ 2081.62
 
-what arbitrage if forward price too high?
+if dividend yield = 1%
 
-difference between forward price and expected future price?
+F0 ≈ 2060.91
 
-why do dividends reduce forward prices?
+dividends reduce forward price
 
-why do storage costs increase forward prices?
+---
+
+things interviewers often ask
+
+why forward value = 0 at initiation
+
+difference forward price vs expected price
+
+what arbitrage if forward too high
+
+why dividends reduce forward prices
+
+why storage costs increase forward prices
