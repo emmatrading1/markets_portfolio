@@ -1,154 +1,126 @@
-# IRS / Interest Rate Swaps — Notes
+# swaps / IRS notes
 
-## What is a swap
+interest rate swap = exchange of interest payments on a notional  
+no notional exchange, just the interest flows
 
-Interest Rate Swap = contract where two parties exchange interest payments on a notional.
-
-Most common structure:
+classic structure:
 fixed vs floating
 
-One side:
-receive fixed / pay floating
+one side receive fixed / pay float  
+other side pay fixed / receive float
 
-Other side:
-pay fixed / receive floating
+floating leg usually something like SOFR / SONIA / €STR depending on currency
 
-Floating leg references short-term rates:
-SOFR (USD)
-SONIA (GBP)
-€STR (EUR)
 
-Important: notional is NOT exchanged, only interest payments.
+swap rate
 
----
+fixed rate set so that PV fixed leg = PV floating leg
 
-## Swap rate
-
-The fixed rate is set so that:
-
-PV fixed leg = PV floating leg
-
-So at inception:
+so when the trade starts:
 
 NPV ≈ 0
 
-No money changes hands when the swap starts.
 
-The fixed rate that achieves this is the **swap rate**.
+intuition
 
----
+receiving fixed basically behaves like being long a bond
 
-## Intuition
+because you're receiving fixed cashflows
 
-Receiving fixed behaves like owning a bond.
+so:
 
-Why:
+receiver fixed = long duration  
+payer fixed = short duration
 
-you receive fixed cashflows.
 
-So:
+P&L intuition
 
-receiver fixed → long duration  
-payer fixed → short duration
+receiver fixed
 
----
+rates ↓ → good  
+fixed rate you locked becomes more valuable
 
-## PnL intuition
+rates ↑ → bad
 
-Receiver fixed:
 
-rates ↓ → fixed payments become more valuable → MTM +
+payer fixed
 
-rates ↑ → fixed payments less attractive → MTM -
+rates ↑ → good  
+because fixed rate you're paying becomes cheap vs market
 
----
+rates ↓ → bad
 
-Payer fixed:
 
-rates ↑ → fixed rate you're paying becomes cheap vs market → MTM +
+DV01
 
-rates ↓ → MTM -
+DV01 = $ change for 1bp move in rates
 
----
-
-## DV01
-
-DV01 = dollar change in value for a 1bp move in rates.
-
-Used to measure rate risk.
-
-Example:
+example
 
 DV01 = 50k/bp
 
 rates move -20bp
 
-PnL ≈ 50k × 20 = +1m
+PnL ≈ +1m
 
-Traders usually talk in DV01 rather than price.
 
----
+traders usually think in DV01 not price
 
-## DV01-neutral trades
 
-Traders often hedge to remove parallel rate exposure.
+DV01 neutral
 
-Example:
+common thing on desks
 
-receive fixed 10Y
-pay fixed 5Y
+example
 
-size positions so DV01 exposure cancels.
+receive 10Y
+pay 5Y
 
-Then the trade is about curve shape rather than rate direction.
+size positions so DV01 cancels
 
-Example: 5s10s steepener.
+then you're not trading direction anymore  
+you're trading the curve
 
----
+ex: 5s10s steepener
 
-## Swap spreads
 
-swap spread = swap rate − government bond yield (same maturity)
+swap spread
 
-example:
+swap rate - gov bond yield (same maturity)
 
-10Y swap = 4.10%
-10Y treasury = 4.00%
+example
+
+10Y swap = 4.10  
+10Y treasury = 4.00
 
 spread = 10bp
 
-Drivers:
+moves with:
 
-- treasury demand / flight to safety
-- dealer balance sheet constraints
-- hedging flows from investors
+treasury demand
+dealer balance sheet
+hedging flows
 
----
 
-## Closing a swap
+closing a swap
 
-To exit a swap position:
+enter opposite swap
 
-enter the opposite swap with same maturity and notional.
+ex
 
-Example:
+receive fixed 5Y  
+close = pay fixed 5Y
 
-original trade:
-receive fixed 5Y
+cashflows offset → position flat → MTM locked
 
-close:
-pay fixed 5Y
 
-cashflows offset → position flat → MTM realized.
+why swaps matter
 
----
+core rates instrument
 
-## why swaps matter
+used for
 
-core instrument in rates markets.
-
-Used to:
-- hedge interest rate exposure
-- trade curve shape
-- manage duration
-- express macro views on rates
+hedging duration
+trading curve shape
+macro views on rates
+balance sheet management
