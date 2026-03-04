@@ -1,92 +1,95 @@
-# swaps / IRS notes
+**swap definition**
 
 interest rate swap = exchange of interest payments on a notional  
-no notional exchange, just the interest flows
+no notional exchange → only interest flows
 
-classic structure:
-fixed vs floating
+classic structure → fixed vs floating
 
-one side receive fixed / pay float  
-other side pay fixed / receive float
+one side: receive fixed / pay float  
+other side: pay fixed / receive float
 
-floating leg usually something like SOFR / SONIA / €STR depending on currency
+floating leg usually indexed to SOFR / SONIA / €STR depending on currency
 
 
-swap rate
+**swap rate**
 
-fixed rate set so that PV fixed leg = PV floating leg
+fixed rate chosen so that
 
-so when the trade starts:
+PV fixed leg = PV floating leg
+
+so when trade starts
 
 NPV ≈ 0
 
 
-intuition
+**intuition**
 
-receiving fixed basically behaves like being long a bond
+receiving fixed behaves like being long a bond
 
-because you're receiving fixed cashflows
+reason → you're receiving fixed cashflows
 
-so:
+so
 
-receiver fixed = long duration  
-payer fixed = short duration
+receiver fixed → long duration  
+payer fixed → short duration
 
 
-P&L intuition
+**P&L intuition**
 
 receiver fixed
 
 rates ↓ → good  
-fixed rate you locked becomes more valuable
+locked fixed rate becomes more valuable
 
 rates ↑ → bad
-
 
 payer fixed
 
 rates ↑ → good  
-because fixed rate you're paying becomes cheap vs market
+fixed rate you're paying becomes cheap vs market
 
 rates ↓ → bad
 
 
-DV01
+**DV01**
 
-DV01 = $ change for 1bp move in rates
+DV01 = dollar value of a 1bp move
+
+how much PnL changes if rates move 1bp
 
 example
 
-DV01 = 50k/bp
-
+DV01 = 50k/bp  
 rates move -20bp
 
 PnL ≈ +1m
 
+traders usually think in DV01 rather than price
 
-traders usually think in DV01 not price
 
+**DV01 neutral**
 
-DV01 neutral
-
-common thing on desks
+very common on desks
 
 example
 
-receive 10Y
-pay 5Y
+receive 10Y swap  
+pay 5Y swap
 
-size positions so DV01 cancels
+sizes chosen so DV01 cancels
 
-then you're not trading direction anymore  
-you're trading the curve
-
-ex: 5s10s steepener
+→ not trading direction anymore  
+→ trading curve shape
 
 
-swap spread
+example trade
 
-swap rate - gov bond yield (same maturity)
+5s10s steepener
+
+
+**swap spread**
+
+swap spread = swap rate − government bond yield
 
 example
 
@@ -95,32 +98,34 @@ example
 
 spread = 10bp
 
-moves with:
+drivers
 
-treasury demand
-dealer balance sheet
+treasury demand  
+dealer balance sheet  
 hedging flows
 
 
-closing a swap
+**closing a swap**
 
-enter opposite swap
+close position by entering opposite swap
 
-ex
+example
 
 receive fixed 5Y  
-close = pay fixed 5Y
+close → pay fixed 5Y
 
-cashflows offset → position flat → MTM locked
+cashflows offset  
+position becomes flat  
+MTM locked
 
 
-why swaps matter
+**why swaps matter**
 
-core rates instrument
+core instrument in rates markets
 
 used for
 
-hedging duration
-trading curve shape
-macro views on rates
-balance sheet management
+hedging duration  
+trading curve shape  
+macro views on rates  
+bank balance sheet management
