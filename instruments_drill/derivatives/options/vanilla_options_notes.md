@@ -1,15 +1,15 @@
-core idea
+## core idea
 
 option = right but not obligation to trade an asset at a predetermined price (strike)
 
 call → right to buy asset at strike K  
-put → right to sell asset at strike K
+put → right to sell asset at strike K  
 
 buyer pays premium upfront  
 maximum loss for option buyer = premium
 
 
-value at expiration
+## value at expiration
 
 call payoff = max(ST − K, 0)  
 put payoff = max(K − ST, 0)
@@ -17,16 +17,16 @@ put payoff = max(K − ST, 0)
 profit = payoff − premium
 
 
-basic intuition
+## basic intuition
 
 call → benefits from price increase  
-put → benefits from price decrease
+put → benefits from price decrease  
 
-call has unlimited upside  
-put has large upside when price falls
+call upside = unlimited  
+put upside = large when price falls
 
 
-example: call option
+## call example
 
 S0 = 100  
 K = 100  
@@ -41,10 +41,8 @@ break-even
 call break-even = K + premium  
 → 106
 
-profit only begins when price exceeds break-even
 
-
-example: put option
+## put example
 
 S0 = 100  
 K = 100  
@@ -60,7 +58,7 @@ put break-even = K − premium
 → 95
 
 
-straddle strategy
+## straddle strategy
 
 long call + long put (same strike and maturity)
 
@@ -75,7 +73,7 @@ loss if price stays near strike
 → strategy trades volatility rather than direction
 
 
-put-call parity
+## put-call parity
 
 relationship between call, put, stock and bond
 
@@ -89,16 +87,15 @@ r = risk-free rate
 T = maturity
 
 
-synthetic positions
+## synthetic positions
 
 options can replicate stock exposure
 
-long call + short put = synthetic long stock
-
+long call + short put = synthetic long stock  
 short call + long put = synthetic short stock
 
 
-intuition
+## intuition
 
 if stock rises
 
@@ -115,11 +112,9 @@ short put loses value
 → payoff behaves like stock loss
 
 
-trader takeaway
+## trader takeaway
 
-options are not just directional trades
-
-they allow traders to:
+options allow traders to
 
 replicate stock exposure  
 trade volatility  
