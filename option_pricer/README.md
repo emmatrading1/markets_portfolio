@@ -1,44 +1,29 @@
 # Option Pricer
 
-Simple Python implementation of a Black-Scholes option pricer built to explore option valuation and sensitivities in equity derivatives.
+Small Python project where I implemented a basic Black-Scholes option pricer.
 
-## What it does
+The goal was mainly to build intuition around how option prices react to volatility, time to maturity, interest rates and moneyness.
 
-- prices European call and put options
-- takes standard Black-Scholes inputs:
-  - spot price
-  - strike
-  - maturity
-  - interest rate
-  - volatility
-- includes a basic put-call parity check
+Right now the tool prices European calls and puts and includes a quick put-call parity check.
 
-## Files
+Files:
 
-- `black_scholes.py` — pricing functions
-- `pricer_app.py` — example run and diagnostics
-- `greeks.py` — Greeks calculations (building)
+black_scholes.py  
+Core pricing functions.
 
-## Example inputs
+pricer_app.py  
+Simple script where I run the pricer with example parameters.
 
-- Spot: 100
-- Strike: 100
-- Maturity: 1 year
-- Rate: 5%
-- Volatility: 20%
+greeks.py  
+Work in progress — adding delta, gamma, vega and theta.
 
-## Example output
+Why I built it:
 
-- Call price: ~10.45
-- Put price: ~5.57
+I wanted a simple tool to experiment with option pricing instead of just using formulas from class. It also helps understand how traders think about volatility and sensitivities.
 
-## Why I built it
+Next steps:
 
-I wanted a clean tool to understand how option prices react to volatility, rates, time to maturity and moneyness, and to build intuition that is useful for derivatives and structuring roles.
-
-## Next steps
-
-- add Greeks
-- add volatility sensitivity analysis
-- add payoff charts
-- turn it into a simple interactive pricer
+- add Greeks  
+- add volatility sensitivity tests  
+- plot payoff profiles  
+- eventually turn it into a small interactive pricer
