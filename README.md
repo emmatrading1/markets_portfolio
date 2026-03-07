@@ -1,42 +1,28 @@
 # Markets Portfolio
 
-Personal workspace where I document what I’m learning about financial markets.
+This repository is my personal workspace for learning about financial markets.
 
-I use this repo to:
-- write short market notes
-- study derivatives and market instruments
-- build small Python tools related to trading
-- test simple strategy ideas
+I use it to write market notes, study financial instruments, and build small projects related to trading and macro analysis. Most of the work focuses on FX, rates and derivatives.
 
-Most of the work focuses on FX, rates and macro-driven markets.
+**Market Pulse**  
+Short notes on what is happening in markets. Usually a quick recap of macro news and how different assets react.
 
-## Market Pulse
+**Macro Research**  
+Occasional longer notes on specific themes (China growth, energy markets, central banks, etc.).
 
-Short notes on daily or weekly market developments.  
-The goal is to follow macro news and observe how different assets react.
+**Instrument Drill**  
+Notes and exercises based on Hull’s *Options, Futures and Other Derivatives* to build intuition on futures, options, swaps and structured products.
 
-## Macro Research
+**Macro Event Tracker**  
+Project tracking how markets react to major economic releases like CPI, NFP or central bank decisions.
 
-Occasional deeper notes on specific macro themes (for example China growth, energy markets or central bank policy).
+**Option Pricer**  
+Small Python project implementing Black-Scholes and option Greeks.
 
-## Instrument Drill
-
-Notes and exercises based on Hull’s *Options, Futures and Other Derivatives* to build intuition around derivatives pricing and hedging.
-
-## Macro Event Tracker
-
-Project tracking how markets react to major economic releases such as CPI, NFP or central bank decisions.
-
-## Option Pricer
-
-Python implementation of the Black-Scholes model with option Greeks.
-
-## Systematic FX Backtests
-
+**Systematic FX Backtests**  
 Simple strategy backtests on major FX pairs exploring trend and momentum behaviour.
 
-## Trade Ideas
+**Trade Ideas**  
+A log of trade ideas and market themes I follow while learning markets.
 
-A log of market ideas and trade setups I follow while learning markets.
-
-This repository evolves as I continue studying markets and building projects.
+This repo evolves as I continue studying markets and building projects.
