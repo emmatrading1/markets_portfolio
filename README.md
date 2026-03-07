@@ -1,33 +1,42 @@
 # Markets Portfolio
 
-**Emma Abeelack** | Master in Market Finance, Sciences Po, France (Class of 2026)
+Personal workspace where I document what I’m learning about financial markets.
 
-Quantitative trading portfolio documenting systematic strategies, market research, and live execution for Sales & Trading recruitment.
+I use this repo to:
+- write short market notes
+- study derivatives and market instruments
+- build small Python tools related to trading
+- test simple strategy ideas
 
----
+Most of the work focuses on FX, rates and macro-driven markets.
 
-## Portfolio Structure
+## Market Pulse
 
-**[FX Systematic Backtests](fx_backtests/)** — Momentum and volatility-filtered strategies across USD/JPY, EUR/USD, and GBP/USD. EUR/USD returned +12.84% vs +2.65% buy-and-hold; GBP/USD returned +18.70% with only -5.09% max drawdown. All strategies maintain Sharpe ratios above 0.45.
+Short notes on daily or weekly market developments.  
+The goal is to follow macro news and observe how different assets react.
 
-**[Daily Market Notes](daily_market_notes/)** — Short-form commentary on currencies, equities, and market-moving events.
+## Macro Research
 
-**[Macro Research](macro_research/)** — Longer analyses covering central bank policy, regional economics (Japan, China, Hong Kong), and sector themes.
+Occasional deeper notes on specific macro themes (for example China growth, energy markets or central bank policy).
 
-**[Paper Trading](paper_trading/)** — Live trade documentation via Interactive Brokers with entry/exit rationale, position sizing, and P&L tracking.
+## Instrument Drill
 
-**[Code](code/)** — Python modules for data acquisition, backtesting, and visualization.
+Notes and exercises based on Hull’s *Options, Futures and Other Derivatives* to build intuition around derivatives pricing and hedging.
 
----
+## Macro Event Tracker
 
-## Technical Stack
+Project tracking how markets react to major economic releases such as CPI, NFP or central bank decisions.
 
-Python (pandas, numpy, matplotlib, yfinance), Git/GitHub, VS Code, Interactive Brokers, Excel/VBA
+## Option Pricer
 
----
+Python implementation of the Black-Scholes model with option Greeks.
 
-## Contact
+## Systematic FX Backtests
 
-[LinkedIn](https://www.linkedin.com/in/emma-abeelack/) | abeelacke@gmail.com
+Simple strategy backtests on major FX pairs exploring trend and momentum behaviour.
 
-*Actively maintained — new content added regularly.*
+## Trade Ideas
+
+A log of market ideas and trade setups I follow while learning markets.
+
+This repository evolves as I continue studying markets and building projects.
