@@ -1,5 +1,4 @@
 Week of Mar 3–7, 2026  
-Emma Abeelack
 
 The dominant theme this week was the escalation of the conflict involving Iran and the resulting shock to energy markets. Oil prices surged as shipping through the Strait of Hormuz became severely disrupted, raising concerns about a potential supply shock in global energy markets.
 
