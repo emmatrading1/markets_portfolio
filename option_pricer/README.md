@@ -21,9 +21,10 @@ Why I built it:
 
 I wanted a simple tool to experiment with option pricing instead of just using formulas from class. It also helps understand how traders think about volatility and sensitivities.
 
-Next steps:
+It now prices European calls and puts and computes basic Greeks (delta, gamma, vega, theta).
 
-- add Greeks  
+Next steps:
+ 
 - add volatility sensitivity tests  
 - plot payoff profiles  
 - eventually turn it into a small interactive pricer
