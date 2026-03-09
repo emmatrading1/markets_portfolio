@@ -1,5 +1,4 @@
 # Market Pulse 2026-03-09
-
 Driver
 Escalation of the Middle East conflict and disruption to oil flows through the Strait of Hormuz pushing crude above $100 and triggering renewed inflation fears.
 
