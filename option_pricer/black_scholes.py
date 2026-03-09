@@ -1,4 +1,5 @@
 import numpy as np
+import math
 from scipy.stats import norm
 
 def black_scholes_call(S, K, T, r, sigma):
@@ -19,7 +20,7 @@ def black_scholes_put(S, K, T, r, sigma):
     put = K * np.exp(-r*T) * norm.cdf(-d2) - S * norm.cdf(-d1)
 
     return put
-    
+
     import math
 from scipy.stats import norm
 

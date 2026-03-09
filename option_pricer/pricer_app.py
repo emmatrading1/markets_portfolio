@@ -17,12 +17,12 @@ parity_lhs = call_price - put_price
 parity_rhs = S - discounted_strike
 
 print("=== Black-Scholes Option Pricer ===")
-print(f"Spot (S): {S}")
-print(f"Strike (K): {K}")
-print(f"Maturity (T): {T}")
-print(f"Rate (r): {r}")
-print(f"Volatility (sigma): {sigma}")
-print()
+
+S = float(input("Spot price (S): "))
+K = float(input("Strike (K): "))
+T = float(input("Maturity in years (T): "))
+r = float(input("Risk-free rate (r): "))
+sigma = float(input("Volatility (sigma): "))
 
 print(f"Call price: {call_price:.4f}")
 print(f"Put price:  {put_price:.4f}")
@@ -98,3 +98,9 @@ print("=== Parity Check ===")
 print(f"Call - Put:        {parity_lhs:.4f}")
 print(f"S - K*e^(-rT):     {parity_rhs:.4f}")
 print(f"Difference:        {abs(parity_lhs - parity_rhs):.8f}")
+
+print("\n=== Volatility Sensitivity ===")
+
+for vol in [0.10, 0.15, 0.20, 0.25, 0.30]:
+    price = black_scholes_call(S, K, T, r, vol)
+    print(f"Vol {vol:.2f} -> Call Price {price:.4f}")
