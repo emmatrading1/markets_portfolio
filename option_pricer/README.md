@@ -1,41 +1,33 @@
 ## Option Pricer
 
-Small Python tool to price European options using the Black-Scholes model.
+Small Python tool to price European options with the Black-Scholes model.
 
-The project was built to develop intuition about how option prices react to changes in volatility, time to maturity, interest rates, and moneyness.
-
-The tool currently prices European calls and puts, computes the main option Greeks, performs simple sensitivity tests, and visualizes option payoff profiles.
-
+It prices calls and puts, computes the main Greeks, checks put-call parity, runs simple spot and volatility tests, estimates implied volatility, and plots profit at expiry.
 
 Files
 
 black_scholes.py  
-Core pricing functions implementing the Black-Scholes model.
+Core pricing functions.
 
 greeks.py  
-Computation of option sensitivities (delta, gamma, vega, theta).
+Delta, gamma, vega, theta.
+
+implied_vol.py  
+Implied volatility solver.
 
 pricer_app.py  
-Main script used to run the pricer with user inputs, display diagnostics, and generate payoff visualizations.
-
+Interactive script to run the pricer, diagnostics, sensitivity tests, and plot.
 
 Why I built it
 
-I wanted a simple tool to experiment with option pricing instead of only working with formulas.  
-Building the model helped me better understand how traders think about option valuation, sensitivities, and risk.
+I wanted a simple project to make option pricing more concrete and to better understand how traders think about sensitivities, hedging, and volatility.
 
+Main features
 
-Features
-
-Prices European call and put options  
-Computes option Greeks (delta, gamma, vega, theta)  
-Performs spot and volatility sensitivity tests  
+Prices European calls and puts  
+Computes Greeks  
 Checks put-call parity  
+Runs spot and volatility sensitivity tests  
+Estimates implied volatility  
+Shows delta hedge intuition  
 Plots option profit at expiry
-
-
-Next steps
-
-- Add implied volatility calculation  
-- Add interactive inputs and scenario testing  
-- Extend payoff visualization to multi-option strategies

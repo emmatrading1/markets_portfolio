@@ -129,6 +129,34 @@ else:
     profits = [put_profit_at_expiry(ST, K, premium) for ST in spot_grid]
     plot_title = "Put Profit at Expiry"
 
+
+from implied_vol import implied_vol_call
+
+market_price = call_price
+
+iv = implied_vol_call(S, K, T, r, market_price)
+
+print("\n=== Implied Volatility ===")
+print(f"Implied Vol: {iv:.4f}")
+
+print("\n=== Delta Hedging ===")
+
+hedge_shares = -c_delta
+print(f"To delta hedge 1 call you short {abs(hedge_shares):.4f} shares")
+
+print("\n=== Spot Scenario Analysis ===")
+
+for shock in [-0.2, -0.1, 0, 0.1, 0.2]:
+    spot = S * (1 + shock)
+    price = black_scholes_call(spot, K, T, r, sigma)
+    print(f"S = {spot:.2f} → Call = {price:.4f}")
+
+    print("\n=== Time Decay ===")
+
+for t in [1.0, 0.75, 0.5, 0.25, 0.1]:
+    price = black_scholes_call(S, K, t, r, sigma)
+    print(f"T = {t:.2f} → Call Price = {price:.4f}") 
+
 plt.figure(figsize=(8, 5))
 plt.plot(spot_grid, profits, label=f"{option_type.capitalize()} profit")
 plt.axhline(0, linewidth=1)
@@ -138,4 +166,5 @@ plt.ylabel("Profit")
 plt.title(plot_title)
 plt.legend()
 plt.tight_layout()
+plt.savefig("option_payoff.png", dpi=300)
 plt.show()
