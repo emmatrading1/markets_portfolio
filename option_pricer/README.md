@@ -1,30 +1,41 @@
-# Option Pricer
+## Option Pricer
 
-Small Python project where I implemented a basic Black-Scholes option pricer.
+Small Python tool to price European options using the Black-Scholes model.
 
-The goal was mainly to build intuition around how option prices react to volatility, time to maturity, interest rates and moneyness.
+The project was built to develop intuition about how option prices react to changes in volatility, time to maturity, interest rates, and moneyness.
 
-Right now the tool prices European calls and puts and includes a quick put-call parity check.
+The tool currently prices European calls and puts, computes the main option Greeks, performs simple sensitivity tests, and visualizes option payoff profiles.
 
-Files:
+
+Files
 
 black_scholes.py  
-Core pricing functions.
-
-pricer_app.py  
-Simple script where I run the pricer with example parameters.
+Core pricing functions implementing the Black-Scholes model.
 
 greeks.py  
-Work in progress — adding delta, gamma, vega and theta.
+Computation of option sensitivities (delta, gamma, vega, theta).
 
-Why I built it:
+pricer_app.py  
+Main script used to run the pricer with user inputs, display diagnostics, and generate payoff visualizations.
 
-I wanted a simple tool to experiment with option pricing instead of just using formulas from class. It also helps understand how traders think about volatility and sensitivities.
 
-It now prices European calls and puts and computes basic Greeks (delta, gamma, vega, theta).
+Why I built it
 
-Next steps:
- 
-- add volatility sensitivity tests  
-- plot payoff profiles  
-- eventually turn it into a small interactive pricer
+I wanted a simple tool to experiment with option pricing instead of only working with formulas.  
+Building the model helped me better understand how traders think about option valuation, sensitivities, and risk.
+
+
+Features
+
+Prices European call and put options  
+Computes option Greeks (delta, gamma, vega, theta)  
+Performs spot and volatility sensitivity tests  
+Checks put-call parity  
+Plots option profit at expiry
+
+
+Next steps
+
+- Add implied volatility calculation  
+- Add interactive inputs and scenario testing  
+- Extend payoff visualization to multi-option strategies
