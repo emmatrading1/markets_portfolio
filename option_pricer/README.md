@@ -1,4 +1,4 @@
-## Option Pricer
+**Option Pricer**
 
 Small Python tool to price European options using the Black-Scholes model.
 
@@ -24,10 +24,10 @@ I wanted a simple tool to experiment with option pricing instead of only working
 
 Features
 
-Prices European calls and puts
-Computes Greeks
-Checks put-call parity
-Runs spot and volatility sensitivity tests
-Estimates implied volatility
-Shows delta hedge intuition
+Prices European calls and puts  
+Computes Greeks  
+Checks put-call parity  
+Runs spot and volatility sensitivity tests  
+Estimates implied volatility  
+Shows delta hedge intuition  
 Plots option profit at expiry
