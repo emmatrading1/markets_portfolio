@@ -64,3 +64,80 @@ example → receive fixed 5Y → close by paying fixed 5Y → cashflows offset �
 ### why swaps matter
 
 core instrument of rates markets → used for duration hedging, curve trading, macro positioning, bank balance sheet management
+
+
+
+### swap valuation intuition
+
+swap can be decomposed into → fixed bond − floating bond
+
+receive fixed swap → long fixed bond / short floating bond
+
+pay fixed swap → short fixed bond / long floating bond
+
+because floating coupons reset to market rates → floating bond value stays close to par
+
+therefore after each reset date → floating leg ≈ notional
+
+
+### duration intuition
+
+receive fixed → behaves like holding a fixed rate bond → positive duration
+
+pay fixed → behaves like shorting a bond → negative duration
+
+rates ↓ → receive fixed gains value
+
+rates ↑ → pay fixed gains value
+
+
+### curve trades
+
+swap traders often combine maturities to trade curve shape
+
+example → receive 10Y swap + pay 5Y swap
+
+if DV01 sized correctly → overall rate exposure ≈ neutral
+
+position then profits from changes in slope of curve
+
+receive long maturity / pay short maturity → steepener
+
+receive short maturity / pay long maturity → flattener
+
+
+### curve notation
+
+yield curve spreads written as → short maturity first
+
+2s10s = 10Y yield − 2Y yield
+
+5s10s = 10Y yield − 5Y yield
+
+10s30s = 30Y yield − 10Y yield
+
+
+### steepening vs flattening
+
+steepening → long maturity yield rises relative to short maturity yield
+
+example → 5s10s increases
+
+flattening → long maturity yield falls relative to short maturity yield
+
+example → 5s10s decreases
+
+
+### DV01 sizing logic
+
+different maturities have different rate sensitivity
+
+example
+
+DV01 30Y ≈ larger than DV01 10Y
+
+therefore traders size notionals so that
+
+DV01 long ≈ DV01 short
+
+result → trade isolates curve movement instead of overall rate direction
