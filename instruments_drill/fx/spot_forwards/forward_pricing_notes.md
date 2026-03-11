@@ -1,91 +1,99 @@
+## FX SPOT & FORWARD PRICING
+
 ### core idea
-
-forward price ≠ prediction of future price → it is determined by arbitrage
-
+forward price ≠ prediction of future spot price → it is determined by arbitrage  
+forward contracts lock an exchange rate today for a transaction at a future date
 
 ### value at initiation
+forward value = 0 at initiation → forward price chosen so that no arbitrage exists
 
-forward value = 0 when contract starts → delivery price chosen so that no arbitrage exists
-
-
-### basic intuition
-
+### pricing intuition
 two equivalent strategies
 
-1 → buy asset today + borrow money  
-2 → enter forward contract today
+1 → buy asset today and finance it  
+2 → enter forward contract today  
 
-→ same future outcome → therefore forward price must equal cost of buying and carrying the asset
-
+both strategies deliver the asset at maturity → forward price must reflect cost of carrying the asset
 
 ### forward pricing formula
+F₀ = S₀ * e^(rT)
 
-F0 = S0 * e^(rT)
+S₀ = spot price  
+r = risk-free rate  
+T = maturity
 
-S0 = spot price → r = risk-free rate → T = maturity
+intuition → buying today requires financing → forward embeds that cost
 
+### income / dividend adjustment
+if the asset generates income
 
-### arbitrage if forward too high
-
-if F0 > S0 e^(rT)
-
-trade → borrow S0 → buy asset → short forward
-
-at maturity → deliver asset into forward → receive F0 → repay loan
-
-profit = F0 − S0 e^(rT)
-
-
-### dividends
-
-if asset pays dividends
-
-F0 = S0 e^((r − q)T)
+F₀ = S₀ * e^((r − q)T)
 
 q = dividend yield
 
-intuition → owning stock gives dividends → forward buyer does not → spot becomes more valuable → forward price lower
+intuition → owning the asset generates income → forward buyer does not receive it → forward price decreases
 
+### FX forward pricing
+F₀ = S₀ * e^((rd − rf)T)
 
-### FX forwards
+rd = domestic interest rate  
+rf = foreign interest rate
 
-F0 = S0 e^((rd − rf)T)
+intuition → forward adjusts spot for the interest rate differential between currencies
 
-rd = domestic interest rate → rf = foreign interest rate
+### forward premium / discount
+higher interest rate currency → forward discount  
+lower interest rate currency → forward premium
 
-higher foreign rate → forward price lower
+example
 
+if USD rate > EUR rate
 
-### cost of carry intuition
+USD trades at forward discount  
+EUR trades at forward premium  
+→ EUR/USD forward > spot
 
-forward price ≈ spot + cost of carrying asset
+### covered interest rate parity (CIP)
+spot, forward and interest rates must satisfy
 
-carry includes → interest rate / storage costs / dividends / foreign interest rate
+F = S * e^((rd − rf)T)
 
-effects → rates ↑ forward ↑ | dividends ↑ forward ↓ | storage costs ↑ forward ↑
+otherwise arbitrage exists between FX and money markets
 
+CIP ensures no risk-free profit from borrowing in one currency and investing in another
 
-### important distinction
+### forward arbitrage logic
+if forward > fair value → asset overpriced in forward market
 
-forward price → determined by arbitrage  
-expected future price → determined by market expectations
+trade
 
+borrow foreign currency  
+convert to domestic at spot  
+invest domestic  
+sell forward
 
-### quick example
+if forward < fair value → asset underpriced in forward market
 
-S0 = 2000 → r = 4%
+trade
 
-F0 ≈ 2081.62
+borrow domestic currency  
+convert to foreign  
+invest foreign  
+buy forward
 
-if dividend yield = 1%
+### trader rule
+forward too high → sell forward  
+forward too low → buy forward
 
-F0 ≈ 2060.91 → dividends reduce forward price
+### why this matters
+FX forwards link
 
+spot FX  
+interest rates  
+funding markets
 
-### interview questions
+used for
 
-why forward value = 0 at initiation  
-difference forward price vs expected price  
-arbitrage if forward price too high  
-why dividends reduce forward prices  
-why storage costs increase forward prices
+hedging FX exposure  
+pricing cross-currency flows  
+funding and arbitrage trades
