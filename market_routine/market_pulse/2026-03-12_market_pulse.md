@@ -11,7 +11,7 @@ Equities: SPX −0.08%, VIX 25.16 (+3.84%) — mild risk-off tone as volatility 
 Commodities: Oil $91.09 (+0.04%), Gold +0.08% — oil remains elevated amid supply disruption while gold edges higher as a safe-haven asset.
 
 FT Insights
-The International Energy Agency warned that the Iran conflict has triggered the largest supply disruption in oil market history, with production cuts exceeding 10mn barrels per day as shipping through the Strait of Hormuz stalls. Although some Gulf producers are rerouting exports and governments are releasing strategic reserves, markets remain highly sensitive to the duration and escalation risk of the conflict.
+The International Energy Agency warned that the Iran conflict has triggered the largest supply disruption in oil market history, with production cuts exceeding 10mn barrels per day as shipping through the Strait of Hormuz stalls.
 
 Risk
 Further attacks on Gulf energy infrastructure or a prolonged disruption of shipping routes could push oil prices significantly higher and amplify inflation and growth risks globally.
