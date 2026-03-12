@@ -43,3 +43,43 @@ def biggest_surprises(df: pd.DataFrame, n: int = 5) -> pd.DataFrame:
     df = df.copy()
     df["abs_surprise"] = df["surprise"].abs()
     return df.sort_values("abs_surprise", ascending=False).head(n)
+
+import pandas as pd
+
+def biggest_surprises(df: pd.DataFrame, n: int = 5):
+    df = df.copy()
+    df["abs_surprise"] = df["surprise"].abs()
+    return df.sort_values("abs_surprise", ascending=False).head(n)
+
+def reaction_by_asset(df: pd.DataFrame, asset: str):
+    return df[df["asset"] == asset][
+        ["date", "event", "surprise", "move"]
+    ]
+
+def macro_shock_score(df):
+    df = df.copy()
+
+    df["abs_surprise"] = df["surprise"].abs()
+
+    return df.sort_values("abs_surprise", ascending=False)
+
+def top_macro_shocks(df, n=3):
+
+    ranked = macro_shock_score(df)
+
+    return ranked.head(n)[
+        ["date", "country", "event", "surprise", "market_reaction"]
+    ]
+
+def inflation_shock_indicator(df):
+
+    inflation_events = df[df["category"] == "inflation"]
+
+    avg_surprise = inflation_events["surprise"].mean()
+
+    if avg_surprise > 0:
+        return "Inflation running HOT"
+    elif avg_surprise < 0:
+        return "Inflation running COOL"
+    else:
+        return "Inflation neutral"
