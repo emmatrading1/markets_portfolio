@@ -68,3 +68,187 @@ replicate stock exposure
 trade volatility
 construct synthetic positions
 hedge portfolios
+
+### **arbitrage intuition**
+
+put-call parity must hold in efficient markets
+
+C − P = S − Ke^(−rT)
+
+if equality does not hold → arbitrage opportunity
+
+example logic
+
+if
+
+C − P > S − Ke^(−rT)
+
+left side too expensive
+
+strategy
+
+sell call
+buy put
+buy stock
+borrow PV(K)
+
+reverse if
+
+C − P < S − Ke^(−rT)
+
+left side too cheap
+
+buy call
+sell put
+sell stock
+lend PV(K)
+
+goal
+
+lock risk-free profit until maturity
+
+
+### **lower bounds**
+
+options cannot be priced below certain theoretical limits
+
+call lower bound
+
+C ≥ max(0, S − Ke^(−rT))
+
+put lower bound
+
+P ≥ max(0, Ke^(−rT) − S)
+
+intuition
+
+call must be worth at least intrinsic value of buying the asset later instead of now
+
+put must be worth at least intrinsic value of selling the asset later instead of now
+
+if price violates bound → arbitrage possible
+
+
+### **options greeks introduction**
+
+greeks measure sensitivity of option price to different risk factors
+
+main greeks
+
+delta
+gamma
+theta
+vega
+rho
+
+
+### **delta**
+
+delta measures sensitivity of option price to underlying price
+
+Δ = ∂C / ∂S
+
+call delta
+
+0 → 1
+
+put delta
+
+0 → −1
+
+intuition
+
+delta roughly measures how much option price moves if the underlying moves by 1
+
+deep ITM call
+
+Δ ≈ 1
+
+deep OTM call
+
+Δ ≈ 0
+
+
+### **gamma**
+
+gamma measures how fast delta changes when the underlying price moves
+
+Γ = ∂²C / ∂S²
+
+gamma highest
+
+near the strike
+near maturity
+
+importance
+
+large gamma → delta changes very quickly
+
+
+### **theta**
+
+theta measures time decay
+
+Θ = ∂C / ∂t
+
+options lose value as maturity approaches
+
+theta usually negative for option buyers
+
+
+### **vega**
+
+vega measures sensitivity to volatility
+
+ν = ∂C / ∂σ
+
+higher volatility
+
+→ higher option value
+
+because probability of large price moves increases
+
+
+### **rho**
+
+rho measures sensitivity to interest rates
+
+ρ = ∂C / ∂r
+
+calls
+
+rates ↑ → option value ↑
+
+puts
+
+rates ↑ → option value ↓
+
+
+### **trader takeaway**
+
+options allow traders to
+
+replicate stock exposure
+trade volatility
+construct synthetic positions
+hedge portfolios
+express macro views with convex payoff
+
+
+### **instrument drill progress**
+
+today
+
+reviewed core option mechanics
+reviewed payoff logic
+worked through put-call parity arbitrage logic
+introduced greeks conceptually
+
+
+### **next drill plan**
+
+delta hedging mechanics
+gamma exposure examples
+volatility intuition
+implied vs realized volatility
+option pricing intuition
