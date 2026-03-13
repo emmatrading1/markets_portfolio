@@ -1,15 +1,14 @@
-## Futures Definition
+### **Futures Definition**
 
 A futures contract is an agreement to buy or sell an asset at a predetermined price at a future date.
 
-Futures are standardized contracts traded on exchanges.  
-A clearinghouse guarantees the trade between participants.
+Futures are standardized contracts traded on exchanges and a clearinghouse guarantees the trade between participants.
 
 Profits and losses are settled daily through a mechanism called **mark-to-market**.
 
 
 
-## Long vs Short Futures
+### **Long vs Short Futures**
 
 Long futures  
 → obligation to buy the underlying asset at maturity  
@@ -21,11 +20,9 @@ Short futures
 
 
 
-## Daily Mark-to-Market
+### **Daily Mark-to-Market**
 
 Futures positions are settled every day.
-
-P&L is calculated as:
 
 P&L = (today futures price − yesterday futures price) × contract size
 
@@ -34,7 +31,7 @@ Losses are deducted from the margin account.
 
 
 
-## Margin System
+### **Margin System**
 
 Initial margin  
 → collateral deposited when opening a futures position.
@@ -48,33 +45,31 @@ The trader must deposit additional funds to restore the account to the initial m
 
 
 
-## Futures Pricing Intuition
+### **Futures Pricing Intuition**
 
 Futures prices reflect the **cost of carry**.
 
 F ≈ S + financing cost + storage cost − convenience yield
 
-Because of these costs, the futures price can differ from the spot price.
+Because of these costs, futures prices can differ from spot prices.
 
 
 
-## Hedging with Futures
+### **Hedging with Futures**
 
 Futures allow market participants to lock a future price.
 
-Two main hedge types exist.
-
 Short hedge  
-→ used when the agent will **sell an asset later**.
+→ used when the agent will **sell an asset later**
 
 Long hedge  
-→ used when the agent will **buy an asset later**.
+→ used when the agent will **buy an asset later**
 
 
 
-## Short Hedge Intuition
+### **Short Hedge Intuition**
 
-Example: a farmer will sell wheat in 6 months.
+Example: a farmer will sell wheat in six months.
 
 Risk  
 → wheat prices may fall.
@@ -86,7 +81,7 @@ If prices fall, the loss in the spot market is offset by a gain in futures.
 
 
 
-## Long Hedge Intuition
+### **Long Hedge Intuition**
 
 Example: a company will buy oil in the future.
 
@@ -100,15 +95,15 @@ If prices rise, the higher purchase cost is offset by a gain in futures.
 
 
 
-## Basis
+### **Basis**
 
 Basis measures the difference between spot and futures prices.
 
-Basis = Spot price − Futures price
+Basis = spot price − futures price
 
 
 
-## Basis Behavior
+### **Basis Behavior**
 
 As the futures contract approaches maturity, the futures price converges toward the spot price.
 
@@ -116,9 +111,9 @@ Therefore the basis tends to **zero at expiration**.
 
 
 
-## Basis Risk
+### **Basis Risk**
 
-Futures hedging eliminates most price risk but not basis risk.
+Futures hedging removes most price risk but not basis risk.
 
 Basis risk = uncertainty about the basis when the hedge is closed.
 
@@ -126,7 +121,7 @@ The final effectiveness of the hedge depends on the basis at that moment.
 
 
 
-## Basis Strengthening vs Weakening
+### **Basis Strengthening vs Weakening**
 
 Basis strengthening  
 → basis moves **closer to zero**
@@ -136,7 +131,7 @@ Basis weakening
 
 
 
-## Impact on Hedge Performance
+### **Impact on Hedge Performance**
 
 Short hedge
 
@@ -151,7 +146,7 @@ Basis strengthens → hedge performs worse
 
 
 
-## Optimal Hedge Ratio
+### **Optimal Hedge Ratio**
 
 When the futures asset differs from the hedged asset, the hedge ratio may differ from 1.
 
@@ -165,7 +160,7 @@ h* = ρ × (σS / σF)
 
 
 
-## Interpretation
+### **Interpretation**
 
 If spot is more volatile than futures  
 → hedge ratio > 1
@@ -175,9 +170,7 @@ If futures are more volatile than spot
 
 
 
-## Number of Futures Contracts
-
-The number of futures contracts used in the hedge is:
+### **Number of Futures Contracts**
 
 N* = h* × (QA / QF)
 
@@ -186,48 +179,48 @@ QF = size of one futures contract
 
 
 
-## Cross Hedging
+### **Cross Hedging**
 
 A cross hedge occurs when the asset being hedged is different from the underlying asset of the futures contract.
 
 Example
 
-Exposure: jet fuel  
-Futures used: crude oil futures
+Exposure → jet fuel  
+Futures used → crude oil futures
 
 Because the assets are not identical, correlation is imperfect and basis risk increases.
 
 
 
-## Stack and Roll Hedging
+### **Stack and Roll Hedging**
 
-When the exposure horizon is longer than the maturity of available futures contracts, traders use a **stack and roll strategy**.
+When the exposure horizon is longer than the maturity of available futures contracts, traders use a **stack-and-roll strategy**.
 
 The process is:
 
-1. open a futures hedge  
-2. close the position before expiration  
-3. open a new futures contract  
-4. repeat until the exposure ends
+open futures hedge  
+close the position before expiration  
+open a new futures contract  
+repeat until the exposure ends
 
 
 
-## Roll Risk
+### **Roll Risk**
 
 Rolling futures introduces **roll risk**.
 
-When the hedge is rolled, the new futures price may differ significantly from the previous contract.
+When the hedge is rolled, the new futures contract may be priced very differently from the previous one.
 
 Changes in the futures curve (contango or backwardation) can affect the cost of maintaining the hedge.
 
 
 
-## Key Intuition
+### **Key Intuition**
 
 A futures hedge locks the futures price but **does not lock the basis**.
 
 Final hedge effectiveness depends on:
 
-- basis movements
-- correlation between assets
-- roll conditions when futures are renewed
+basis movements  
+correlation between assets  
+roll conditions when futures are renewed
