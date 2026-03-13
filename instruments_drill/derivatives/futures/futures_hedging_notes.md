@@ -1,156 +1,156 @@
-### **Futures Definition**
+### **futures definition**
 
-A futures contract is an agreement to buy or sell an asset at a predetermined price at a future date.
+a futures contract is an agreement to buy or sell an asset at a predetermined price at a future date.
 
-Futures are standardized contracts traded on exchanges and a clearinghouse guarantees the trade between participants.
+futures are standardized contracts traded on exchanges and a clearinghouse guarantees the trade between participants.
 
-Profits and losses are settled daily through a mechanism called **mark-to-market**.
+profits and losses are settled daily through **mark-to-market**.
 
 
 
-### **Long vs Short Futures**
+### **long vs short futures**
 
-Long futures  
+long futures  
 → obligation to buy the underlying asset at maturity  
-→ profit if the price rises.
+→ profit if the price rises
 
-Short futures  
+short futures  
 → obligation to sell the underlying asset at maturity  
-→ profit if the price falls.
+→ profit if the price falls
 
 
 
-### **Daily Mark-to-Market**
+### **daily mark-to-market**
 
-Futures positions are settled every day.
+futures positions are settled every day.
 
-P&L = (today futures price − yesterday futures price) × contract size
+p&l = (today futures price − yesterday futures price) × contract size
 
-Profits are credited to the margin account.  
-Losses are deducted from the margin account.
-
-
-
-### **Margin System**
-
-Initial margin  
-→ collateral deposited when opening a futures position.
-
-Maintenance margin  
-→ minimum balance required in the margin account.
-
-If the account balance falls below the maintenance margin, a **margin call** occurs.
-
-The trader must deposit additional funds to restore the account to the initial margin level.
+profits are credited to the margin account  
+losses are deducted from the margin account
 
 
 
-### **Futures Pricing Intuition**
+### **margin system**
 
-Futures prices reflect the **cost of carry**.
+initial margin  
+→ collateral deposited when opening a futures position
+
+maintenance margin  
+→ minimum balance required in the margin account
+
+if the account balance falls below maintenance margin → margin call
+
+the trader must deposit funds to restore the account to the initial margin level
+
+
+
+### **futures pricing intuition**
+
+futures prices reflect the **cost of carry**
 
 F ≈ S + financing cost + storage cost − convenience yield
 
-Because of these costs, futures prices can differ from spot prices.
+because of these costs futures prices can differ from spot prices
 
 
 
-### **Hedging with Futures**
+### **hedging with futures**
 
-Futures allow market participants to lock a future price.
+futures allow market participants to lock a future price
 
-Short hedge  
+short hedge  
 → used when the agent will **sell an asset later**
 
-Long hedge  
+long hedge  
 → used when the agent will **buy an asset later**
 
 
 
-### **Short Hedge Intuition**
+### **short hedge intuition**
 
-Example: a farmer will sell wheat in six months.
+example: a farmer will sell wheat in six months
 
-Risk  
-→ wheat prices may fall.
+risk  
+→ wheat price may fall
 
-Solution  
-→ short futures today.
+solution  
+→ short futures today
 
-If prices fall, the loss in the spot market is offset by a gain in futures.
-
-
-
-### **Long Hedge Intuition**
-
-Example: a company will buy oil in the future.
-
-Risk  
-→ oil prices may rise.
-
-Solution  
-→ long futures today.
-
-If prices rise, the higher purchase cost is offset by a gain in futures.
+if price falls the loss in the spot market is offset by a gain in futures
 
 
 
-### **Basis**
+### **long hedge intuition**
 
-Basis measures the difference between spot and futures prices.
+example: a company will buy oil in the future
 
-Basis = spot price − futures price
+risk  
+→ oil price may rise
 
+solution  
+→ long futures today
 
-
-### **Basis Behavior**
-
-As the futures contract approaches maturity, the futures price converges toward the spot price.
-
-Therefore the basis tends to **zero at expiration**.
+if price rises the higher purchase cost is offset by a gain in futures
 
 
 
-### **Basis Risk**
+### **basis**
 
-Futures hedging removes most price risk but not basis risk.
+basis = spot price − futures price
 
-Basis risk = uncertainty about the basis when the hedge is closed.
-
-The final effectiveness of the hedge depends on the basis at that moment.
+basis measures the difference between the physical market and the futures market
 
 
 
-### **Basis Strengthening vs Weakening**
+### **basis behavior**
 
-Basis strengthening  
+as the futures contract approaches maturity the futures price converges toward the spot price
+
+therefore the basis tends toward **zero at expiration**
+
+
+
+### **basis risk**
+
+hedging removes most price risk but not basis risk
+
+basis risk = uncertainty about the basis when the hedge is closed
+
+final hedge effectiveness depends on the basis at that moment
+
+
+
+### **basis strengthening vs weakening**
+
+basis strengthening  
 → basis moves **closer to zero**
 
-Basis weakening  
+basis weakening  
 → basis moves **further from zero**
 
 
 
-### **Impact on Hedge Performance**
+### **impact on hedge performance**
 
-Short hedge
+short hedge
 
-Basis strengthens → hedge performs better  
-Basis weakens → hedge performs worse
-
-
-Long hedge
-
-Basis weakens → hedge performs better  
-Basis strengthens → hedge performs worse
+basis strengthens → hedge performs better  
+basis weakens → hedge performs worse
 
 
+long hedge
 
-### **Optimal Hedge Ratio**
+basis weakens → hedge performs better  
+basis strengthens → hedge performs worse
 
-When the futures asset differs from the hedged asset, the hedge ratio may differ from 1.
 
-The optimal hedge ratio minimizes the variance of the hedged position.
+
+### **optimal hedge ratio**
+
+when the futures asset differs from the hedged asset the hedge ratio may differ from 1
+
+the optimal hedge ratio minimizes the variance of the hedged position
 
 h* = ρ × (σS / σF)
 
@@ -160,66 +160,66 @@ h* = ρ × (σS / σF)
 
 
 
-### **Interpretation**
+### **interpretation**
 
-If spot is more volatile than futures  
+if spot is more volatile than futures  
 → hedge ratio > 1
 
-If futures are more volatile than spot  
+if futures are more volatile than spot  
 → hedge ratio < 1
 
 
 
-### **Number of Futures Contracts**
+### **number of futures contracts**
 
 N* = h* × (QA / QF)
 
-QA = size of the asset exposure  
+QA = size of asset exposure  
 QF = size of one futures contract
 
 
 
-### **Cross Hedging**
+### **cross hedging**
 
-A cross hedge occurs when the asset being hedged is different from the underlying asset of the futures contract.
+cross hedge = hedging an asset using futures on a different but related asset
 
-Example
+example
 
-Exposure → jet fuel  
-Futures used → crude oil futures
+exposure → jet fuel  
+futures used → crude oil futures
 
-Because the assets are not identical, correlation is imperfect and basis risk increases.
+because assets are not identical correlation is imperfect and basis risk increases
 
 
 
-### **Stack and Roll Hedging**
+### **stack and roll hedging**
 
-When the exposure horizon is longer than the maturity of available futures contracts, traders use a **stack-and-roll strategy**.
+when the exposure horizon is longer than available futures maturities traders use a **stack-and-roll strategy**
 
-The process is:
+process
 
 open futures hedge  
 close the position before expiration  
 open a new futures contract  
-repeat until the exposure ends
+repeat until exposure ends
 
 
 
-### **Roll Risk**
+### **roll risk**
 
-Rolling futures introduces **roll risk**.
+rolling futures introduces **roll risk**
 
-When the hedge is rolled, the new futures contract may be priced very differently from the previous one.
+when the hedge is rolled the new futures contract may be priced very differently from the previous one
 
-Changes in the futures curve (contango or backwardation) can affect the cost of maintaining the hedge.
+changes in the futures curve (contango or backwardation) can affect the cost of maintaining the hedge
 
 
 
-### **Key Intuition**
+### **key intuition**
 
-A futures hedge locks the futures price but **does not lock the basis**.
+a futures hedge locks the futures price but **does not lock the basis**
 
-Final hedge effectiveness depends on:
+final hedge effectiveness depends on
 
 basis movements  
 correlation between assets  
