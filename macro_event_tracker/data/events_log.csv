@@ -1,6 +1,28 @@
 date,time,country,event,category,previous,forecast,actual,asset,move,market_reaction,notes
-2026-03-10,14:30,US,CPI,inflation,3.1,3.2,3.4,UST2Y,0.10,yields up after hotter CPI,inflation surprise pushes front-end higher
-2026-03-10,14:30,US,CPI,inflation,3.1,3.2,3.4,UST10Y,0.07,yields up after hotter CPI,inflation surprise pushes rates higher
-2026-03-10,14:30,US,CPI,inflation,3.1,3.2,3.4,DXY,0.45,dollar strengthens after CPI,usd bid on higher rate expectations
-2026-03-10,14:30,US,CPI,inflation,3.1,3.2,3.4,SPX,-0.90,equities fall as yields rise,valuation pressure from higher rates
-2026-03-10,14:30,US,CPI,inflation,3.1,3.2,3.4,GOLD,0.30,gold rises slightly,safe-haven demand offsets higher yields
+2026-03-10,14:30,US,CPI,inflation,3.1,3.2,3.4,UST2Y,0.10,yields up after hotter CPI,front-end reprices higher rates
+2026-03-10,14:30,US,CPI,inflation,3.1,3.2,3.4,UST10Y,0.07,yields up after hotter CPI,long-end follows inflation risk
+2026-03-10,14:30,US,CPI,inflation,3.1,3.2,3.4,DXY,0.45,dollar strengthens,higher rate expectations support USD
+2026-03-10,14:30,US,CPI,inflation,3.1,3.2,3.4,SPX,-0.90,equities fall,valuation pressure from higher yields
+2026-03-10,14:30,US,CPI,inflation,3.1,3.2,3.4,GOLD,0.30,gold slightly higher,safe-haven demand offsets yields
+
+2026-03-12,13:30,US,NFP,labour,210,190,250,UST2Y,0.08,yields rise,strong labor supports hawkish Fed
+2026-03-12,13:30,US,NFP,labour,210,190,250,DXY,0.35,dollar up,strong macro data
+2026-03-12,13:30,US,NFP,labour,210,190,250,SPX,0.40,equities up,growth optimism dominates
+2026-03-12,13:30,US,NFP,labour,210,190,250,GOLD,-0.50,gold falls,real yields rise
+
+2026-03-14,12:45,EU,ECB Rate Decision,rates,4.00,4.00,4.00,EURUSD,0.20,euro rises slightly,hawkish tone despite hold
+2026-03-14,12:45,EU,ECB Rate Decision,rates,4.00,4.00,4.00,UST10Y,0.02,spillover higher yields,global rates adjust
+2026-03-14,12:45,EU,ECB Rate Decision,rates,4.00,4.00,4.00,SPX,-0.30,equities soften,global tightening concerns
+
+2026-03-16,03:00,CN,Industrial Production,growth,5.2,5.0,4.6,USDCNH,0.25,yuan weakens,growth disappointment
+2026-03-16,03:00,CN,Industrial Production,growth,5.2,5.0,4.6,SPX,-0.20,equities down,china slowdown concerns
+2026-03-16,03:00,CN,Industrial Production,growth,5.2,5.0,4.6,OIL,-1.20,oil drops,weaker demand outlook
+
+2026-03-18,11:00,UK,CPI,inflation,2.8,2.9,2.6,GILT10Y,-0.12,yields fall,softer inflation
+2026-03-18,11:00,UK,CPI,inflation,2.8,2.9,2.6,GBPUSD,-0.40,pound weakens,rate cut expectations rise
+2026-03-18,11:00,UK,CPI,inflation,2.8,2.9,2.6,FTSE,0.50,equities rise,lower rates support valuations
+
+2026-03-19,18:00,US,FOMC Decision,rates,5.25,5.25,5.25,UST2Y,0.15,yields spike,hawkish guidance
+2026-03-19,18:00,US,FOMC Decision,rates,5.25,5.25,5.25,DXY,0.60,dollar surges,hawkish Fed repricing
+2026-03-19,18:00,US,FOMC Decision,rates,5.25,5.25,5.25,SPX,-1.10,equities drop,rate sensitivity
+2026-03-19,18:00,US,FOMC Decision,rates,5.25,5.25,5.25,GOLD,-0.80,gold falls,real yields higher

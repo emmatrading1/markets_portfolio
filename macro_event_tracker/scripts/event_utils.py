@@ -99,3 +99,68 @@ if __name__ == "__main__":
     events = load_events()
     events = compute_surprise(events)
     print(events.head())
+
+def expected_reaction(event: str, category: str, asset: str, surprise: float) -> str:
+    event = str(event).lower()
+    category = str(category).lower()
+    asset = str(asset).upper()
+
+    if category == "inflation" and surprise > 0:
+        if asset in ["UST2Y", "UST10Y", "DXY"]:
+            return "up"
+        if asset == "SPX":
+            return "down"
+    if category == "inflation" and surprise < 0:
+        if asset in ["UST2Y", "UST10Y", "DXY"]:
+            return "down"
+        if asset == "SPX":
+            return "up"
+
+    return "unclear"
+
+def reaction_consistency(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.copy()
+
+    def actual_direction(x):
+        if x > 0:
+            return "up"
+        elif x < 0:
+            return "down"
+        return "flat"
+
+    df["expected_direction"] = df.apply(
+        lambda row: expected_reaction(
+            row["event"], row["category"], row["asset"], row["surprise"]
+        ),
+        axis=1,
+    )
+    df["actual_direction"] = df["move"].apply(actual_direction)
+    df["reaction_match"] = df["expected_direction"] == df["actual_direction"]
+
+    return df[[
+        "date", "event", "asset", "surprise", "move",
+        "expected_direction", "actual_direction", "reaction_match"
+    ]]
+
+def event_snapshot(df: pd.DataFrame, event_name: str, event_date: str) -> pd.DataFrame:
+    df = df.copy()
+    snap = df[(df["event"] == event_name) & (df["date"] == event_date)]
+    return snap[[
+        "date", "time", "country", "event", "asset", "move", "market_reaction", "notes", "surprise"
+    ]].sort_values("asset")
+
+def classify_surprise(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.copy()
+
+    def label(x):
+        ax = abs(x)
+        if ax >= 0.30:
+            return "very large"
+        elif ax >= 0.10:
+            return "moderate"
+        elif ax > 0:
+            return "small"
+        return "none"
+
+    df["surprise_label"] = df["surprise"].apply(label)
+    return df
