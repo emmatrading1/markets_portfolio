@@ -99,3 +99,19 @@ global risk sentiment
 currency movements
 
 understanding carry dynamics is essential for macro and FX trading
+
+### flow intuition (trader view)
+FX moves are driven by flows, not just rates
+
+currency bought → appreciates  
+currency sold → depreciates
+
+carry trade creates structural flows:
+
+borrow funding currency → sell it  
+buy high-yield currency → push it up
+
+
+### key rule
+risk-on → carry builds → high-yield ↑, funding ↓  
+risk-off → carry unwinds → funding ↑ sharply, high-yield ↓

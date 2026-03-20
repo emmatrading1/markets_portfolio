@@ -141,3 +141,25 @@ therefore traders size notionals so that
 DV01 long ≈ DV01 short
 
 result → trade isolates curve movement instead of overall rate direction
+
+### P&L estimation (DV01 use)
+
+P&L ≈ DV01 × Δrates
+
+example:
+DV01 = 15k/bp  
+rates move +10bp → P&L ≈ −150k (if long duration)
+
+DV01 gives a first-order approximation of P&L
+
+
+### convexity (important limitation)
+
+DV01 is linear approximation
+
+for large rate moves → convexity matters
+
+receive fixed (long bond) → positive convexity  
+pay fixed (short bond) → negative convexity
+
+→ DV01 becomes less accurate for large moves

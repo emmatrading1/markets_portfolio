@@ -97,3 +97,42 @@ used for
 hedging FX exposure  
 pricing cross-currency flows  
 funding and arbitrage trades
+
+### forward value (after initiation)
+at initiation → value = 0
+
+after → value changes with forward price
+
+V = (F_market − F_contract) discounted
+
+long forward:
+F ↑ → gain  
+F ↓ → loss
+
+short forward:
+F ↓ → gain  
+F ↑ → loss
+
+
+### FX quotation (base / quote)
+currency pairs are quoted as:
+
+BASE / QUOTE
+
+BASE = first currency  
+QUOTE = second currency
+
+example:
+EUR/USD = 1.10 → 1 EUR = 1.10 USD
+
+
+### trading interpretation
+BUY → receive BASE, pay QUOTE  
+SELL → deliver BASE, receive QUOTE
+
+
+### arbitrage construction (clean version)
+forward too high:
+SELL → deliver BASE → borrow BASE → convert → invest → sell forward
+forward too low:
+BUY → deliver QUOTE → borrow QUOTE → convert → invest → buy forward
