@@ -10,7 +10,7 @@ FX: EURUSD −0.47%, USDJPY +0.17%, USDCNH +0.09% — broad USD strength, with J
 Equities: SPX −1.51%, VIX 29.79 (+11.24%) — equities decline sharply and volatility rises toward stress levels, reflecting a more pronounced risk-off driven by higher rates and macro uncertainty.<br>
 Commodities: Oil 98.91 (+0.83%), Gold −4.09% — oil remains elevated as markets price prolonged supply disruption, while gold falls sharply under pressure from rising real yields, USD strength and position unwinds.
 
-FT Insights  
+WSJ/FT Insights  
 The energy shock is increasingly feeding into global rate expectations rather than remaining confined to commodities. Markets are reassessing central bank reaction functions, with inflation persistence limiting policy flexibility. The US continues to outperform due to structural advantages, reinforcing dollar strength and relative market resilience.
 
 Risk  
