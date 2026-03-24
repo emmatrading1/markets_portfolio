@@ -1,4 +1,4 @@
-###Option Pricer
+### Option Pricer
 
 Small Python tool to price European options using the Black-Scholes model.
 
