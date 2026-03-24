@@ -13,5 +13,6 @@ Most of my notes look at things like:
 
 Weekend notes are slightly different and usually summarize the main themes from the week - a way to keep a consistent habit of following markets.
 
-**Latest note**  
+### Latest note
+
 [2026-03-24 Market Pulse](./2026-03-24_market_pulse.md)
