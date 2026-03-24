@@ -1,8 +1,8 @@
-# FX Systematic Backtests
+### FX Systematic Backtests
 
 Simple Python backtests of trend-following strategies on major FX pairs.
 
-The goal was to test whether basic momentum signals (moving average crossovers) combined with a volatility filter can produce stable performance across currencies.
+The goal is to test if basic momentum signals (moving average crossovers) combined with a volatility filter can produce stable performance across currencies.
 
 Pairs tested:
 - USD/JPY

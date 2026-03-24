@@ -1,4 +1,4 @@
-# Trade Ideas Log
+### Trade Ideas Log
 
 This folder tracks market trade ideas I follow while learning markets.
 
