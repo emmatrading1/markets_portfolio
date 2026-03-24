@@ -14,7 +14,7 @@ Daily notes linking macro developments to moves across rates, FX, equities and c
 Tracking how markets react to key releases (CPI, NFP, central banks) to identify patterns.
 
 **Option Pricer**  
-Python tool to explore Black-Scholes, Greeks, and volatility.
+Python tool to explore Black-Scholes, Greeks and volatility.
 
 **Macro Research**  
 Work on key themes (energy shocks, central banks, China) and their cross-asset implications.
@@ -30,4 +30,4 @@ Structured trade thinking: thesis, drivers, risk. *(upcoming)*
 
 --- 
 
-The goal is simple: understand how markets react, and why.
+The goal is simple: understand how markets react - and why.
