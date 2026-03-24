@@ -2,7 +2,7 @@
 
 Simple Python backtests of trend-following strategies on major FX pairs.
 
-The goal is to test if basic momentum signals (moving average crossovers) combined with a volatility filter can produce stable performance across currencies.
+The goal is to test whether basic momentum signals (moving average crossovers) combined with a volatility filter can produce stable performance across currencies.
 
 Pairs tested:
 - USD/JPY

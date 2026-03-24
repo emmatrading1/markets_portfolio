@@ -4,7 +4,7 @@ This project tracks how major markets react to key macroeconomic events.
 
 The idea is : after important releases (CPI, NFP, central bank decisions, etc.), I record how different assets move in the minutes and hours following the announcement.
 
-The objective is to build intuition around how macro news actually transmits into markets.
+The objective is to build intuition around how macro news actually transmits into markets. 
 
 Assets I track include:
 
