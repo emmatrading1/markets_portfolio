@@ -1,13 +1,13 @@
 # Market Pulse 2026-03-24
 
 Driver  
-Markets are driven by a temporary de-escalation signal in the US–Iran conflict after Trump announced a postponement of strikes. This triggered a sharp reversal in oil prices and a relief rally in risk assets, although the underlying supply disruption (Strait of Hormuz) remains unresolved. The key dynamic is a shift from pure inflation shock repricing to a more headline-driven environment with unstable expectations.
+Markets are driven by a temporary de-escalation signal in the US–Iran conflict after Trump announced a postponement of strikes. This triggered a sharp reversal in oil prices but also a relief rally in risk assets, although the underlying supply disruption (Strait of Hormuz) remains unresolved. The key dynamic is a shift from pure inflation shock repricing to a more headline-driven environment with unstable expectations.
 
 Transmission  
-Rates: US 2Y 3.887 (+3bp), US 10Y 4.370 (+2bp) — bear flattening persists, with front-end yields still leading as markets maintain a higher-for-longer rate view despite short-term risk relief.<br>
-USD: DXY 99.29 (+0.14%) — dollar remains supported by elevated yields and safe-haven demand, though upside is more contained as risk sentiment improves.<br>
-FX: EURUSD −0.15%, USDJPY +0.15%, USDCNH +0.13% — USD strength remains broad but less aggressive, with JPY weakening alongside yields and CNH relatively stable.<br>
-Equities: SPX +1.15%, VIX 26.63 (+1.84%) — equities rebound on de-escalation headlines, but volatility stays elevated, reflecting fragile positioning and persistent uncertainty.<br>
+Rates: US 2Y 3.887 (+3bp), US 10Y 4.370 (+2bp) — bear flattening persists, and front-end yields are still leading as markets maintain a higher-for-longer rate view despite the short-term risk relief.<br>
+USD: DXY 99.29 (+0.14%) — dollar is still supported by elevated yields and safe-haven demand, although upside is more contained because of improving risk sentiment.<br>
+FX: EURUSD −0.15%, USDJPY +0.15%, USDCNH +0.13% — USD strength remains good but less aggressive, with JPY weakening alongside yields and CNH relatively stable.<br>
+Equities: SPX +1.15%, VIX 26.63 (+1.84%) — equities have rebounded on de-escalation headlines, but volatility stays elevated, reflecting fragile positioning and persistent uncertainty.<br>
 Commodities: Oil 90.50 (−1.64%), Gold +0.34% — oil corrects sharply on reduced immediate escalation risk, while gold stabilizes as geopolitical hedging demand offsets pressure from yields.
 
 WSJ/FT Insights  
