@@ -1,15 +1,17 @@
 ### swap definition
 
-interest rate swap = exchange of interest payments on a notional → no principal exchange, only interest flows
+interest rate swap = exchange of interest cashflows based on a notional → no principal exchange, only interest payments
 
-structure → fixed leg vs floating leg → one side receive fixed / pay float, other side pay fixed / receive float
+structure → fixed leg vs floating leg → one party receives fixed / pays floating, the other pays fixed / receives floating
 
 floating leg usually indexed to SOFR / SONIA / €STR depending on currency
 
 
 ### swap rate
 
-fixed rate chosen so that PV(fixed leg) = PV(floating leg) → therefore when trade starts → NPV ≈ 0
+at inception → fixed rate is set so that PV(fixed leg) = PV(floating leg) → NPV ≈ 0
+
+purpose → transform interest rate exposure (fixed ↔ floating) without exchanging principal
 
 
 ### intuition
