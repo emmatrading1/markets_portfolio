@@ -1,4 +1,4 @@
-# Weekend Market Note — Week of Mar 31–Apr 4, 2026
+Week of Apr 30–02, 2026
 
 The dominant theme this week was the shift from a pure oil-price shock to a broader macro constraint story. Markets are increasingly pricing not only higher energy costs, but also the fact that governments and central banks have much less room than in past crises to cushion the fallout.
 
