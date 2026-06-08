@@ -15,4 +15,4 @@ Weekend notes are slightly different and usually summarize the main themes from 
 
 ### Latest note
 
-[2026-06-04 Market Pulse](./market_pulse/2026-06-04_market_pulse.md)
+[2026-06-08 Market Pulse](./market_pulse/2026-06-08_market_pulse.md)
