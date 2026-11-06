@@ -2,8 +2,6 @@
 
 Moving average crossover with volatility filtering, tested from January 2020 to October 2025.
 
----
-
 ## Results
 
 | Metric | Strategy | Buy & Hold |
@@ -18,22 +16,16 @@ Strategy outperformed buy-and-hold by exiting before the 2022 EUR crisis. While 
 
 ![Equity Curve](results/eurusd_backtest_equity.png)
 
----
-
 ## Strategy
 
 - **Entry:** 20-day MA crosses above 50-day MA, ATR above 30th percentile
 - **Exit:** 20-day MA crosses below 50-day MA
 
----
-
 ## Files
 
-- `download_data.py` — fetches data from Yahoo Finance
-- `strategy.py` — backtest implementation
-- `results/` — equity curve and output
-
----
+- `download_data.py`: fetches data from Yahoo Finance
+- `strategy.py`: backtest implementation
+- `results/`: equity curve and output
 
 ## Limitations
 

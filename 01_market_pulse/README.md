@@ -26,7 +26,13 @@ If you only read a few notes, these weekly ones follow the same theme from start
 - [Week of May 11–17](./2026/2026-05-17_weekly_market_pulse.md): the oil shock turns into a rates shock
 - [Week of Jun 15–21](./2026/2026-06-21_weekly_market_pulse.md): energy relief, then Fed-driven caution
 
+## Longer notes
+
+- [China: early signs of stabilisation after policy support](./deep_dives/2025-11_china_policy_support.md) (Nov 2025)
+
 ## All notes
 
 - [2025](./2025): first notes, Oct–Dec 2025
 - [2026](./2026): daily notes, weekend briefs and weekly summaries
+
+I wrote daily notes until July 2026. Since November 2026, I write one weekly note every Sunday.

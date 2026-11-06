@@ -2,8 +2,6 @@
 
 Moving average crossover with volatility filtering, tested from January 2020 to October 2025.
 
----
-
 ## Results
 
 | Metric | Strategy | Buy & Hold |
@@ -14,11 +12,9 @@ Moving average crossover with volatility filtering, tested from January 2020 to 
 | Win Rate | 54.74% | - |
 | Trades | 33 | - |
 
-Lower returns than buy-and-hold, but half the drawdown. The strategy was out of the market during JPY's sharp 2024-2025 move—missed upside, but preserved capital during volatile periods.
+Lower returns than buy-and-hold, but half the drawdown. The strategy was out of the market during JPY's sharp 2024-2025 move, missed upside, but preserved capital during volatile periods.
 
 ![Equity Curve](results/usdjpy_backtest_equity.png)
-
----
 
 ## Strategy
 
@@ -27,15 +23,11 @@ Lower returns than buy-and-hold, but half the drawdown. The strategy was out of 
 
 The volatility filter avoids whipsaw trades during low-vol consolidation.
 
----
-
 ## Files
 
-- `download_data.py` — fetches data from Yahoo Finance
-- `strategy.py` — backtest implementation
-- `results/` — equity curve and output
-
----
+- `download_data.py`: fetches data from Yahoo Finance
+- `strategy.py`: backtest implementation
+- `results/`: equity curve and output
 
 ## Limitations
 

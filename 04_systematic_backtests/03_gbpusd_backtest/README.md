@@ -2,8 +2,6 @@
 
 Moving average crossover with volatility filtering, tested from January 2020 to October 2025.
 
----
-
 ## Results
 
 | Metric | Strategy | Buy & Hold |
@@ -18,22 +16,16 @@ Best risk-adjusted performance of the three pairs. The strategy exited before Ca
 
 ![Equity Curve](results/gbpusd_backtest_equity.png)
 
----
-
 ## Strategy
 
 - **Entry:** 20-day MA crosses above 50-day MA, ATR above 30th percentile
 - **Exit:** 20-day MA crosses below 50-day MA
 
----
-
 ## Files
 
-- `download_data.py` — fetches data from Yahoo Finance
-- `strategy.py` — backtest implementation
-- `results/` — equity curve and output
-
----
+- `download_data.py`: fetches data from Yahoo Finance
+- `strategy.py`: backtest implementation
+- `results/`: equity curve and output
 
 ## Limitations
 
