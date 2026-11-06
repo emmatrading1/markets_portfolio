@@ -1,16 +1,28 @@
-### Trade Ideas Log
+# Trade idea — [Instrument], [date]
 
-This folder tracks market trade ideas I follow while learning markets.
+**Direction:** long / short [instrument], or relative value [A vs B]
+**Horizon:** [e.g. 2–6 weeks]
 
-The goal is to structure and evaluate trade ideas by focusing on:
+## Thesis (3 lines max)
+What the market is pricing today, what you think it gets wrong, and why.
 
-• macro thesis  
-• entry levels  
-• risk / invalidation  
-• trade evolution  
+## Drivers
+- Macro driver 1 (data release, central bank, flows…)
+- Macro driver 2
+- Positioning / valuation (if relevant)
 
-The emphasis is on decision-making and consistency rather than outcomes.
+## Levels
+- Entry: [level, date]
+- Target: [level], and why that level
+- Stop / invalidation: [level], and what would prove the thesis wrong
 
-Most ideas come from the themes discussed in the Market Pulse and Macro Notes.
+## Risks
+- Main risk scenario
+- Event calendar to watch (dates)
 
-Trades are tracked in a paper account for learning purposes.
+## Follow-up
+| Date | Level | Comment |
+|---|---|---|
+| | | |
+
+## Outcome and lesson (fill when closed)
