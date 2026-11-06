@@ -2,16 +2,14 @@
 
 This project tracks how major markets react to key macroeconomic events.
 
-The idea is: after important releases (CPI, NFP, central bank decisions, etc.), I record how different assets move in the minutes and hours following the announcement.
-
-The objective is to build intuition around how macro news actually transmits into markets.
+The idea is the following : after important releases (CPI, NFP, central bank decisions, etc.), I record how different assets move in the minutes and hours following the announcement.
 
 Assets I track include:
 
 - FX (EUR/USD, USD/JPY)
 - Rates (US 10Y yields)
 - Equities (S&P 500 futures)
-- Commodities (gold, oil)
+- and Commodities (gold, oil)
 
 Over time this should create a small dataset of event reactions that can be used to spot patterns in market behaviour.
 
@@ -24,7 +22,7 @@ Over time this should create a small dataset of event reactions that can be used
 | S&P 500 | −1.10% |
 | Gold | −0.80% |
 
-A hawkish surprise shows up first in the front end of the curve, then in a stronger dollar and weaker risk assets.
+When the Fed sounds tougher than expected, short-term rates rise first, then the dollar goes up and stocks and gold fall.
 
 ## Files
 
