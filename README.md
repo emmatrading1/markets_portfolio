@@ -2,32 +2,35 @@
 
 This is how I make sense of markets.
 
-I track how macro news flows into prices, how assets react, and how positioning evolves.  
-The goal is not to predict markets, but to understand how they move.
+I'm a Master 2 Finance student at Sciences Po, and this repo is where I put everything I do on the side: market notes, a Black-Scholes pricer and FX backtests in Python.
 
---- 
+I'm looking for a 6-month market finance internship in Paris from March 2027.
+[LinkedIn](https://www.linkedin.com/in/emma-abeelack/) · abeelacke@gmail.com 
 
-**Market Pulse**  
-Daily notes linking macro developments to moves across rates, FX, equities and commodities.
+## If you only look at three things
 
-**Macro Event Tracker**  
-Tracking how markets react to key releases (CPI, NFP, central banks) to identify patterns.
+**[Option Pricer](./03_option_pricer)**
+Black-Scholes pricing, Greeks and implied volatility in Python.
 
-**Option Pricer**  
-Python tool to explore Black-Scholes, Greeks and volatility.
+**[FX Backtests](./05_systematic_backtests)**
+Consists of a 20/50 moving average crossover with an ATR volatility filter on USD/JPY, EUR/USD and GBP/USD (2020–2025). The filter has cut drawdowns by roughly half on all three pairs, but it missed the big one-way USD/JPY trend that happenned in 2024–25.
 
-**Macro Research**  
-Work on key themes (energy shocks, central banks, China) and their cross-asset implications.
+| Pair | Strategy | Buy & hold | Sharpe | Max drawdown |
+|---|---|---|---|---|
+| USD/JPY | +24.5% | +45.6% | 0.64 | −9.4% |
+| EUR/USD | +12.8% | +2.7% | 0.46 | −9.0% |
+| GBP/USD | +18.7% | +2.8% | 0.61 | −5.1% |
 
-**Systematic FX Backtests**  
-Simple strategies (trend, momentum) to understand behaviour across FX markets.
+![USD/JPY equity curve](05_systematic_backtests/01_usdjpy_backtest/results/usdjpy_backtest_equity.png)
 
-**Instrument Notes**  
-Ongoing work on derivatives to strengthen pricing and payoff intuition.
+**[Market Pulse](./01_market_routine)**
+100+ notes since October 2025, where I try to link macro news to moves in rates, FX, equities and commodities.
 
-**Trade Ideas**  
-Structured trade thinking: thesis, drivers, risk. *(upcoming)*
+## The rest of my project
 
---- 
+- **[Macro Event Tracker](./02_macro_event_tracker)**: how the markets react to CPI, NFP and central bank decisions
+- **[Macro Research](./04_macro_research)**: longer notes on energy, central banks and China (will add more)
+- **[Instrument Notes](./06_instruments_notes)**: options, futures, FX forwards, bonds, swaps (my studying notes)
+- **[Trading Journal](./07_trade_ideas)**: trade ideas with thesis, entry, invalidation and risk (working on it)
 
-The goal is simple: understand how markets react - and why.
+Python (pandas, NumPy, SciPy, matplotlib, yfinance), Jupyter.

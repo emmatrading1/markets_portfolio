@@ -14,5 +14,3 @@ Assets I track include:
 - Commodities (gold, oil)
 
 Over time this should create a small dataset of event reactions that can be used to spot patterns in market behaviour.
-
-Still building.
